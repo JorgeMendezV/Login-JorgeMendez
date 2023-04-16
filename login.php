@@ -69,6 +69,7 @@
       <div class="signup-container">
         <p class="generic-text">¿No tienes una cuenta?</p>
         <button class="signup-button"> <a href="signup.php"> Crear cuenta </a> </button>
+        <button type="submit"><a href="./index.php">Back to home </a></button>
       </div>
 
     </div>

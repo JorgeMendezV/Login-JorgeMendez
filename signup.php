@@ -57,12 +57,8 @@
           <input type="password" name="password" autocomplete="off" placeholder="Contraseña" class="login-input" 
               required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" 
               title="Su contraseña debe tener mínimo 8 caracteres, entre ellos minúsculas, mayúsculas y al menos 1 carácter especial."/>
-
-          <input type="password" autocomplete="off" placeholder="Ingrese nuevamente su contrasena" class="login-input" 
-              required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" 
-              title="Su contraseña debe tener mínimo 8 caracteres, entre ellos minúsculas, mayúsculas y al menos 1 carácter especial."/>
-
               <button type="submit" value="Submit"> create account </a></button>
+              <button type="submit"><a href="./login.php">Back to login </a></button>
         </form>
       </div>
     </div>

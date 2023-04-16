@@ -5,13 +5,13 @@ body {
   letter-spacing: 1.5px;
 }
 
-main h1 {
+main h1, h3 {
   text-align: center;
   letter-spacing: 5px !important;
 }
 
 section img {
-  width: 200px;
+  width: 100px;
   display: block;
   margin: 0 auto;
 }
@@ -20,14 +20,14 @@ section {
   margin-bottom: 140px;
 }
 
-@media (max-width: 60em) {
-  main h1 {
-    font-size: 20px;
+@media (min-width:35em) and (max-width: 60em) {
+  main h1, h3 {
+    font-size: 18px;
   }
 }
 
 #Nosotros, #Servicios, #Contactanos {
-  padding-top: 40px;
+  padding-top: 10em;
 }
 
 
@@ -35,12 +35,9 @@ section {
   letter-spacing: 10px;
 }
 
-
-/*OLD NAV CONTAINER - MENU*/
-
 .content-container {
   /*Con este margin top desplazo el contenido debajo de la imagen.*/
-  margin-top: 40%;
+  margin-top: 35%;
 }
 
 
@@ -65,9 +62,9 @@ Hará que la imagen quede por debajo del nav.*/
 se ajustará mejor a los tamaños de la fuente actual.
 Es útil para responsive.*/
 
-@media (max-width: 60em) {
+@media (min-width:35em) and (max-width: 60em) {
   .content-container {
-    margin-top: 78%;
+    margin-top: 90%;
   }
 
   .nav-img-container img {
@@ -78,44 +75,6 @@ Es útil para responsive.*/
     width: 100%;
     height: 60%;
   }
-}
-
-
-/* ITEMS ABOUT US*/
-
-.box-container {
-  display: flex;
-}
-
-.box-items {
-  border: 100px black;
-  padding: 10px;
-  text-align: center;
-  margin: 5px;
-  background-color: rgb(244, 244, 244);
-  border-radius: 10px;
-}
-
-/*Para las fotos del personal se agregó que sea redondeado con border-radius.*/
-.box-items img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.box-items-services {
-  padding: 10px;
-  text-align: center;
-  margin: 5px;
-  background-color: rgb(244, 244, 244);
-  border-radius: 10px;
-}
-
-.box-items-services img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
 }
 
 /*CONTACT US CONTAINER*/
@@ -134,7 +93,7 @@ Es útil para responsive.*/
   margin-right: 20px;
 }
 
-@media (max-width: 60em) {
+@media (min-width:35em) and (max-width: 60em) {
   .contact-container img {
     width: 80%;
     margin-right: 10px;
