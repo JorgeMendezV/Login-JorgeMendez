@@ -1,10 +1,17 @@
+
+/*GENERAL*/
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("../image/fondoOracleDevs.png");
-  /* Para que sirven estos */
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
+}
+
+a {
+  color:white;
+  font-style: none;
+  text-decoration: none;
 }
 
 .generic-text {
@@ -20,6 +27,8 @@ body {
   color: #474747;
 }
 
+/*Contendor Principal*/
+
 .container {
   display: flex;
   flex-direction: column;
@@ -30,7 +39,7 @@ body {
 
 /* Estilos para el contenedor del formulario */
 .login-container {
-  padding: 30px;
+  padding: 40px;
   background: #FCFBFA;
   border-radius: 20px;
   box-shadow: 0 0 10px grey;
@@ -56,10 +65,10 @@ body {
 /* Estilos para el cuadros de diálogos, usuario y contraseña */
 .login-input {
   font-size: 13px;
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 23px;
+  border-radius: 14px;
   border: none;
   box-shadow: 0 0 5px grey;
 }

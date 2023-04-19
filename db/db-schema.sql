@@ -1,5 +1,5 @@
-/*Posible estructura de base 
-de datos normalizada para login con tipos de usuarios*/
+/*Estructura de base de datos 
+normalizados para login con tipos de usuarios*/
 CREATE DATABASE php_login_db;
 
 USE php_login_db;
@@ -19,11 +19,17 @@ CREATE TABLE usuarios (
     FOREIGN KEY (tipo_usuario_id) REFERENCES tipo_usuario(id)
 );
 
-select * from Users;
+INSERT INTO tipo_usuario (nombre_tipo) VALUES ('Administrador');
+select * from tipo_usuario;
+
+select * from usuarios;
+select nombre, dui, contrasena, TU.nombre_tipo FROM usuarios u 
+	INNER JOIN tipo_usuario tu ON u.tipo_usuario_id = tu.id;
+    
 #Contrasena prueba
 #@Holamundo123
 
-DELETE FROM Users;
+DELETE FROM usuarios;
 
 
 
