@@ -1,6 +1,10 @@
 <?php
+
   session_start();
   require 'database.php';
+  include('verification.php');
+
+  verificar_login();
 
   $message = '';
 
@@ -85,9 +89,6 @@
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" href="login.php">LOG IN</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="signup.php">SIGN UP</a>
                 </li>
               </ul>
               <?php endif; ?>

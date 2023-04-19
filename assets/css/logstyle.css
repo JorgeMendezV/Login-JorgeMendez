@@ -1,129 +1,121 @@
-      /* Estilos para el cuerpo de la página */
-      /*Selector simple para la etiqueta body*/
-      body {
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-image: url("");
-        /* Para que sirven estos */
-        background-size: cover;
-        background-attachment: fixed;
-        overflow: hidden;
-      }
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("../image/fondoOracleDevs.png");
+  /* Para que sirven estos */
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
 
-      a {
-        color: white;
-        text-decoration: none;
-      }
+.generic-text {
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: grey;
+}
 
-      .generic-text {
-        font-size: 15px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-bottom: 10px;
-        margin-top: 5px;
-        color: grey;
-      }
+.generic-text a {
+  text-decoration: underline;
+  color: #474747;
+}
 
-      .generic-text a {
-        text-decoration: underline;
-        color: #474747;
-      }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+/* Estilos para el contenedor del formulario */
+.login-container {
+  padding: 30px;
+  background: #FCFBFA;
+  border-radius: 20px;
+  box-shadow: 0 0 10px grey;
+  text-align: center;
+}
 
-      /* Estilos para el contenedor del formulario */
-      .login-container {
-        width: 30%;
-        padding: 30px;
-        background: #FCFBFA;
-        border-radius: 20px;
-        box-shadow: 0 0 10px grey;
-        text-align: center;
-      }
+/* Estilos para el título del formulario */
+/*Selector de clase*/
+.login-title {
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  color: black;
+}
 
-      /* Estilos para el título del formulario */
-      /*Selector de clase*/
-      .login-title {
-        font-size: 20px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-bottom: 20px;
-        color: black;
-      }
+/* Estilos para el logo */
+.login-logo {
+  width: 40%;
+  height: 10%;
+  margin-bottom: 20px;
+}
 
-      /* Estilos para el logo */
-      .login-logo {
-        width: 40%;
-        height: 10%;
-        margin-bottom: 20px;
-      }
+/* Estilos para el cuadros de diálogos, usuario y contraseña */
+.login-input {
+  font-size: 13px;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px grey;
+}
 
-      /* Estilos para el cuadros de diálogos, usuario y contraseña */
-      .login-input {
-        font-size: 13px;
-        width: 90%;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border: none;
-        box-shadow: 0 0 5px grey;
-      }
+/* Estilos para el cuadros de diálogos, usuario y contraseña al seleccionarlos */
+/* Selector pseudoclase combinado en la clase .login-input*/
+.login-input:focus {
+  outline: none;
+  /*box-shadow: h-shadow v-shadow blur color;*/
+  box-shadow: 0 0 10px grey;
+}
 
-      /* Estilos para el cuadros de diálogos, usuario y contraseña al seleccionarlos */
-      /* Selector pseudoclase combinado en la clase .login-input*/
-      .login-input:focus {
-        outline: none;
-        /*box-shadow: h-shadow v-shadow blur color;*/
-        box-shadow: 0 0 10px grey;
-      }
+/* Estilos para los botones con atributo submit */
+/*Selector de atributo*/
+button[type="submit"] {
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
 
-      /* Estilos para los botones con atributo submit */
-      /*Selector de atributo*/
-      button[type="submit"]{
-        font-size: 13px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #0f0f0f;
-        color: white;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
-      }
+/* Estilos para los botones con atributo submit, efecto al pasar sobre él*/
+/* Selector pseudoclase combinado en el selector de atributo*/
+/*Ejemplo interesante de selectores atributo: img[src$=".jpg"]*/
+button[type="submit"]:hover {
+  background-color: #383838;
+}
 
-      /* Estilos para los botones con atributo submit, efecto al pasar sobre él*/
-      /* Selector pseudoclase combinado en el selector de atributo*/
-      /*Ejemplo interesante de selectores atributo: img[src$=".jpg"]*/
-      button[type="submit"]:hover {
-        background-color: #383838;
-      }
+.signup-container {
+  padding: 20px 10%;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px grey;
+  border-radius: 15px;
+}
 
-      .signup-container {
-        padding: 20px 10%;
-        text-align: center;
-        margin-top: 20px;
-        background-color: white;
-        box-shadow: 0 0 10px grey;
-        border-radius: 15px;
-      }
+/* Estilos para el botón de crear cuenta */
+.signup-button {
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
 
-      /* Estilos para el botón de crear cuenta */
-      .signup-button {
-        font-size: 13px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: black;
-        color: white;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
-      }
-
-      /* Estilos para el botón de crear cuenta, efecto al pasar sobre él*/
-      .signup-button:hover {
-        background-color: #383838;
-      }
+/* Estilos para el botón de crear cuenta, efecto al pasar sobre él*/
+.signup-button:hover {
+  background-color: #383838;
+}

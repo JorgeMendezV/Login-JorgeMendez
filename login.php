@@ -1,5 +1,4 @@
 <?php 
-
 // para utilizar las sesiones
   session_start();
   require 'database.php';
@@ -32,9 +31,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Login practica II Jorge Méndez</title>
-    <link rel="stylesheet" href="assets/css/logstyle.css">
-    <style>
-    </style>
+    <link rel="stylesheet" href="./assets/css/logstyle.css">
   </head>
 
   <body>
@@ -69,10 +66,7 @@
       <div class="signup-container">
         <p class="generic-text">¿No tienes una cuenta?</p>
         <button class="signup-button"> <a href="signup.php"> Crear cuenta </a> </button>
-        <button type="submit"><a href="./index.php">Back to home </a></button>
       </div>
-
     </div>
-
   </body>
 </html>
